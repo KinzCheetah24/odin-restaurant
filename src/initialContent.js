@@ -1,4 +1,4 @@
-export {loadInitialContent, removeInitialContent};
+export {loadInitialContent, removeContent};
 
 import restaurantImage from "./img/restaurant-image.jpg";
 
@@ -18,10 +18,10 @@ function loadInitialContent () {
     content.appendChild(restaurantMotto);
 }
 
-function removeInitialContent () {
+function removeContent () {
     const content = document.getElementById("content");
 
-    for (let i = 0 ; i < content.children.length ; i++) {
-        content.remove(content.children[i]);
+    while (content.children.length > 0) {
+        content.removeChild(content.children[0]);
     }
 }
