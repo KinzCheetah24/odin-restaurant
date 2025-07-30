@@ -1,3 +1,5 @@
+import "./style.css";
+
 import { loadInitialContent, removeContent } from "./initialContent.js";
 import { loadMenuContent } from "./menuContent.js";
 import { loadAboutContent } from "./aboutContent.js";
